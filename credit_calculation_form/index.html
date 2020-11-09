@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Loan Counting Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h3>Loan Counting Form</h3>
+    <form action="#" id="mainForm">
+        <label for="txtLoanAmount">Enter The Amount</label>
+        <input type="text" name="" id="txtLoanAmount">
+        <label for="listMaturity">Enter the Maturity</label>
+        <select name="" id="listMaturity">
+            <option value="12">12 Months</option>
+            <option value="24">24 Months</option>
+            <option value="36">36 Months</option>
+            <option value="48">48 Months</option>
+        </select>
+        <input type="button" value="Calculate Loan Repayment " onclick="countLoan();">
+
+    </form>
+    <h5 id="result"></h5>
+</body>
+</html>
