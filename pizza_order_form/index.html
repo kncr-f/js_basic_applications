@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Pizza Siparis Formu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body onload="urunGetir();">
+    <h3 class="baslik">Pizza Siparis Formu</h3>
+    <form action="" id="formPizza">
+        <label for="listePizza">Pizza Boyutunu Seciniz</label>
+        <select name="" id="listePizza" size="4">
+            <!--Boş Liste-->
+        </select>
+        <label for="listeEkMalzeme">Ek Malzeme Seciniz</label>
+        <span>
+            <label for="mal1">Yeşil zeytin</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal1" value="Yeşil zeytin">
+            <label for="mal2">Siyah zeytin</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal2" value="Siyah zeytin">
+            <label for="mal3">Mantar</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal3" value="Mantar">
+            <label for="mal4">Pastırma</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal4" value="Pastırma">
+            <label for="mal5">Sucuk</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal5" value="Sucuk">
+            <label for="mal6">Sosis</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal6" value="Sosis">
+
+        </span>
+
+        <label for="listeEkSecimler">Ek Malzemeler</label>
+        <select name="" id="listeEkSecimler" size="6">
+
+        </select>
+      
+        <label for="grupIndirim">Indirim kodunu giriniz</label>
+            <span>
+                <label for="kodTrue">Indirim kuponu var</label>
+                <input type="radio" name="grupIndirim" id="kodTrue" value="aktif" onchange="toogle();">
+                <label for="kodFalse">Indirim kuponu yok</label>
+                <input type="radio" name="grupIndirim" id="kodFalse" value="pasif" onchange="toogle();" checked>
+            </span>
+            <label for="txtIndirimKodu">Indirim kodunu giriniz </label>
+            <input type="text" id="txtIndirimKodu" disabled>
+            <input type="button" value="Hesapla/Dogrula" id="btnHesapla" onclick="pizzaHesapla();" >
+
+    </form>
+    <h5 id="sonuc"></h5>
+    <h5 id="dogrulama"></h5>
+
+</body>
+</html>
